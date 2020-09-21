@@ -4,7 +4,7 @@ import (
 	"errors"
 	"strconv"
 
-	"../converter"
+	"curr-converter/converter"
 )
 
 type InputData struct {

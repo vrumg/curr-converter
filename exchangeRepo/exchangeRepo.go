@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"../converter"
+	"curr-converter/converter"
 )
 
 type Exchange struct {

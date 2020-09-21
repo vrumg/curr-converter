@@ -5,9 +5,9 @@ import (
 	"log"
 	"os"
 
-	"./controller"
-	"./converter"
-	"./exchangeRepo"
+	"curr-converter/controller"
+	"curr-converter/converter"
+	"curr-converter/exchangeRepo"
 )
 
 func main() {
