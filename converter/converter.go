@@ -6,7 +6,7 @@ import (
 )
 
 type CurrencyRepo interface {
-	GetRates(srcCur string) (*Rates, error)
+	GetRates(string) (*Rates, error)
 }
 
 type Rates struct {

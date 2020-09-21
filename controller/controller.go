@@ -3,13 +3,16 @@ package controller
 import (
 	"errors"
 	"strconv"
-
-	"curr-converter/converter"
 )
+
+type ConverterDomain interface {
+	SetCurrencyAmount(float64, string, string)
+	GetResult() (string, error)
+}
 
 type InputData struct {
 	Args   []string
-	Domain *converter.AmountConverter
+	Domain ConverterDomain
 }
 
 func (s *InputData) getValidationError() error {
